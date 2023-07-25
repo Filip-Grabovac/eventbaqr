@@ -23,7 +23,7 @@ export const QRscanner = () => {
     });
 
     scanner.render(success, error);
-  }, [scanningProcess]);
+  }, [scanningProcess, success]);
 
   async function success(ticketId) {
     if (scanningProcess === 'done') {
